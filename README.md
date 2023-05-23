@@ -8,7 +8,7 @@ a trivial storage adapter for GunDB using localForage
 
 In contrast to the author's [in-memory storage](https://github.com/rozek/gundb-in-memory-storage-adapter) and [direct localStorage](https://github.com/rozek/gundb-direct-localstorage-adapter) adapters, this one can be used to persist large volumes of shared data (up to the quota defined by a client's browser).
 
-"direct" means that a nodes complete id (its "soul") is used as a key for localForage to store that node's contents. While this may work well for short souls, it will consume a lot of memory as soon as the node ids get longer...
+"direct" means that a node's complete id (its "soul") is used as a key for localForage to store that node's contents. While this may work well for short souls, it will consume a lot of memory as soon as the node ids get longer...
 
 > **Important**: this adapter is not yet finished and its documentation still has to be written. The plan is to finish everything by end of June, 2023
 
