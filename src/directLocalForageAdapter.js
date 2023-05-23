@@ -62,14 +62,14 @@
         ))
       })
       .then((Data) => {                                   // acknowledge success
-        Context.on('in', { '@':DedupId, ok:0, err:null })
+        Context.on('in', { '@':DedupId, ok:true, err:null })
       })
       .catch((Signal) => {                                // acknowledge failure
         Error = 'localForage put failure: ' + Signal + (
           Signal.stack == null ? '' : '' + Signal.stack
         )
 
-        Context.on('in', { '@':DedupId, ok:0, err:Error })
+        Context.on('in', { '@':DedupId, ok:false, err:Error })
       })
     })
   })
