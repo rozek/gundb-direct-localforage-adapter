@@ -38,7 +38,7 @@
           Signal.stack == null ? '' : '' + Signal.stack
         )
 
-        Context.on('in', { '@':DedupId, err:Signal, put:null })
+        Context.on('in', { '@':DedupId, err:Error, put:null })
       })
     })
 
