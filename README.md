@@ -10,7 +10,7 @@ In contrast to the author's [in-memory storage](https://github.com/rozek/gundb-i
 
 "direct" means that a node's complete id (its "soul") is used as a key for localForage to store that node's contents. While this may work well for short souls, it will consume a lot of memory as soon as the node ids get longer...
 
-> **Important**: this adapter is not yet finished and its documentation still has to be written. The plan is to finish everything by end of June, 2023
+> **Important: after two weeks of intensive work and no substantial outcome, I have decided to give up on GunDB - it is full of bugs and - even worse - race conditions and the implementation looks like being hacked in a style used 40 years ago (when source code had to be compact and variable names short in order to fit into the memory) **
 
 ## Usage ##
 
